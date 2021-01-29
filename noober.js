@@ -170,10 +170,11 @@ async function pageLoaded() {
                             let legs = rides[n] 
                             printPool(rides[n])
                        }
-          // If the ride has only 1 leg, goes on to check whether its an Pruple, XL, or X
+                       // If the ride has only 1 leg, goes on to check whether its an Pruple, XL, or X
            } else if (rides[0].purpleRequested == true) {
           levelOfService = 'Noober Purple'
           printServiceLevel(levelOfService)
+          console.log(rides[0].purpleRequested)
           printPurple(rides[0]) 
           } else if (rides[0].numberOfPassengers > 3) {
           console.log(rides[0].numberOfPassengers)
